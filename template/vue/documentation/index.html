@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!-- SITE META -->
+      <title></title>
+      <!-- BOOTSTRAP STYLES -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min-4.css">
+      <!-- TEMPLATE STYLES -->
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+      <!-- TEMPLATE STYLES -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body class="leftside">
+      <div id="loading">
+         <div id="loading-center">
+            <img src="images/loder.gif" alt="">
+         </div>
+      </div>
+      <!-- START SITE -->
+      <div id="wrapper">
+      <div class="row-offcanvas row-offcanvas-left">
+         <div id="sidebar-fix" class="sidebar-offcanvas">
+            <header id="vertical" class="header header-style-1">
+               <nav class="navbar navbar-default yamm p-0">
+                  <div class="container-f">
+                     <div class="navbar-header">
+                        <div class="site-logo text-center">
+                           <a class="navbar-brand" href="#">
+                           <img class="img-responsive p-4" src="images/logo-black.png" alt="">
+                           </a>
+                        </div>
+                     </div>
+                     <div id='cssmenu'>
+                        <ul>
+                           <li class='has-sub active'>
+                              <a href='#'><span>Introduction</span></a>
+                              <ul>
+                                 <li><a href='#basic-installation'><span>Basic Installation</span></a></li>
+                                 <li><a href='#folder-structure'><span>Folder Structure</span></a></li>
+                                 <li><a href='#xamin-structure'><span>Xamin custom components structure</span></a></li>
+                                 <li><a href="#basic-css">CSS Structure</a></li>
+                                 <li><a href="#basic-favicon">For Favicon icon</a></li>
+                                 <li><a href="#basic-loading">For Page Loading Transitions</a></li>
+                                 <li><a href="#basic-logo">For Logo</a></li>
+                                 <li class='last'><a href='#basic-fonts'><span>For Changing Fonts</span></a></li>
+                              </ul>
+                           </li>
+                           <li class='has-sub'>
+                              <a href='#'><span>Helper classes</span></a>
+                              <ul>
+                                 <li><a href="#basic-padding">For section padding</a></li>
+                                 <li><a href="#basic-color">For Text color</a></li>
+                                 <li><a href="#basic-background">For Background color</a></li>
+                                 <li><a href="#basic-pattern">For Background Images and pattern</a></li>
+                                 <li><a href="#basic-overlay">For Background overlay</a></li>
+                                 <li class='last'><a href='#basic-separator'>For Separator</a></li>
+                              </ul>
+                           </li>
+                           <li><a href="#basic-components"><span>Bootstrap Components</span></a></li>
+                           <li><a href="#basic-form"><span>For Contact Form</span></a></li>
+                           <li><a href="#basic-cards"><span>For Cards</span></a></li>
+                           <li><a href="#basic-header"><span>For Header</span></a></li>
+                           <li><a href="#basic-footer"><span>For Footer</span></a></li>
+                           <li class='last'><a href='#basic-source'><span>Source & Credits</span></a></li>
+                        </ul>
+                     </div>
+                     <!--/.nav-collapse -->
+                  </div>
+                  <!--/.container-fluid -->
+               </nav>
+               <!-- end nav -->
+            </header>
+            <!-- end header -->
+         </div>
+         <!-- end sidebar -->
+         <div id="main">
+            <section class="intro-banner" style="background: url('images/bg/01.jpg'); background-size: cover; background-repeat: no-repeat;">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <a href="#"><img src="images/white-logo.png" class="img-responsive" alt=""></a>
+                        <h1 class="text-white">USER GUIDE</h1>
+                        <p class="text-white">On behalf of iqonicthemes team, we would like to thank you for purchasing this item. Your support encourages us to build better items and continuously bring value to our products. This documentation file covers all the information needed to install and use this Template. You'll find everything you need to know to create a stunning and beautiful website in minutes.</p>
+                        <p class="text-white">Xamin is a HTML/CSS template based on <b>Bootstrap 4 framework</b>. This documentation will give you an understanding of how Xamin template is structured and guide you in performing common functions. If you require further assistance not covered in this documentation, please contact us in our Support Click here to contact us</p>
+                        <ul>
+                           <li>Created: 15 December 2019</li>
+                           <li>By: iQonicthemes</li>
+                           <li>Email: <a href="mailto:design@iqonicthemes.com">design@iqonicthemes.com</a></li>
+                           <li>HelpDesk: <a target="_blank" href="http://iqonicthemes.com/">http://iqonicthemes.com/contactus</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-installation">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Basic Installation</h2>
+                        <p>Steps to be followed for getting started with the template:</p>
+                        <p>There are followings basics packages you should install before going further.</p>
+                        <ol>
+                            <li>Open terminal or CMD and go the root directory of the template</li>
+                            <li>Run in terminal or CMD: <code>npm install</code></li>
+                            <li>To Run project on Local environment run: <code>npm run dev</code></li>
+                            <li>Then visit:  <code>http://localhost:3000</code></li>
+                            <li>To Deploy project on server create production build by running: <code> npm build </code> or <code>yarn build</code></li>
+                            <li>This will generate <code>/dist</code> folder in project root directory you'll have to upload these file using a FTP on your server</li>
+                            <li>Now that you have followed these steps your basic installation is complete and ready to flaunt your site to the world.</li>
+                            <li>If you wish to <b>SSR(Universal)</b> to <b>SPA(Single Page Application)</b> then run below step.</li>
+                            <li>
+                              <pre class="prettyprint lang-html linenums">
+<b>package.json</b>
+	"scripts": {
+	  "dev": "nuxt",
+	  "build": "nuxt build",
+	  "start": "nuxt start",
+	  "generate": "nuxt generate",
+	  "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+	},
+
+<b>nuxt.config.js</b>
+	export default {
+	  mode: 'spa',
+	}
+			      </pre>
+                            </li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="folder-structure">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Folder Structure</h2>
+                        <p>Here is the <strong>general structure of the template:</strong></p>
+                     </div>
+                  </div>
+                   <div class="row">
+                       <div class="col-md-12">
+                           <pre class="prettyprint lang-html linenums">
+xamin-vue
+
+| - assets
+    | - app
+       | - app.css
+       | - app.js
+    | - css
+    | - fonts
+    | - images
+    | - js
+
+| - components
+    | - AboutUs-1
+    | - AboutUs-2
+    | - ArtificialIntelligence
+    | - BigDataServices
+    | - Blog
+    | - BlogDetails
+    | - BlogLeftSidebarGrid1
+    | - BlogLeftSidebarGrid2
+    | - BlogOneColumnGrid
+    | - BlogRightSidebarGrid1
+    | - BlogRightSidebarGrid2
+    | - BlogThreeColumnGrid
+    | - BlogTwoColumnGrid
+    | - BusinessIntelligence
+    | - Careers
+    | - Clients
+    | - ContactUs
+    | - DataAnalytics
+    | - DataManagement
+    | - DataScienceConsulting
+    | - DataVisualization
+    | - FooterStyle1
+    | - FooterStyle2
+    | - LandingPage1
+    | - LandingPage10
+    | - LandingPage11
+    | - LandingPage2
+    | - LandingPage3
+    | - LandingPage4
+    | - LandingPage5
+    | - LandingPage6
+    | - LandingPage7
+    | - LandingPage8
+    | - LandingPage9
+    | - ManagedAnalytics
+    | - Masonry
+    | - OurTeam
+    | - PortfolioDetail
+    | - Services
+    | - themes
+
+| - Layouts
+      - AboutUs.vue
+      - Blog.vue
+      - default.vue
+      - LandingPage10.vue
+      - LandingPage11.vue
+      - LandingPage1.vue
+      - LandingPage2.vue
+      - LandingPage3.vue
+      - LandingPage4.vue
+      - LandingPage5.vue
+      - LandingPage6.vue
+      - LandingPage7.vue
+      - LandingPage8.vue
+      - LandingPage9.vue
+      - OurCases.vue
+      - Pages.vue
+      - Services.vue
+| - pages
+    | - about-1
+    | - about-2
+    | - artificial-intelligence
+    | - big-data-services
+    | - blog
+    | - blog-details
+    | - blog-left-sidebar-grid-1
+    | - blog-left-sidebar-grid-2
+    | - blog-one-column-grid
+    | - blog-right-sidebar-grid-1
+    | - blog-right-sidebar-grid-2
+    | - blog-three-column-grid
+    | - blog-two-column-grid
+    | - business-intelligence
+    | - careers
+    | - clients
+    | - contact-us
+    | - data-analytics
+    | - data-management
+    | - data-science-consulting
+    | - data-visualization
+    | - index.vue
+    | - landing-page-1
+    | - landing-page-10
+    | - landing-page-11
+    | - landing-page-2
+    | - landing-page-3
+    | - landing-page-4
+    | - landing-page-5
+    | - landing-page-6
+    | - landing-page-7
+    | - landing-page-8
+    | - landing-page-9
+    | - managed-analytics
+    | - masonry-2
+    | - masonry-3
+    | - masonry-no-space
+    | - our-team
+    | - portfolio-2
+    | - portfolio-3
+    | - portfolio-4
+    | - portfolio-5
+    | - portfolio-detail
+    | - portfolio-no-space
+    | - services
+    | - _theme
+
+| - plugins
+| - static
+  - eslintrc.js
+  - jsconfig.json
+  - nuxt.config.js
+  - package.json
+  - README.md</pre>
+                       </div>
+                   </div>
+               </div>
+            </section>
+             <section id="xamin-structure">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <h2 class="heading-title">Xamin custom components structure</h2>
+                             <p>Here is the general structure of the xamin custom components:</p>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-md-12">
+                           <pre class="prettyprint lang-html linenums">
+&lt;!-- Xamin components --&gt;
+
+| - components
+    | - themes
+        | - Card
+            | - CardStyle1.vue
+            | - CardStyle2.vue
+            | - CardStyle3.vue
+            | - CardStyle4.vue
+            | - CardStyle5.vue
+            | - CardStyle6.vue
+            | - CardStyle7.vue
+            | - FancyCard1.vue
+            | - FancyCard2.vue
+            | - FancyCard3.vue
+            | - FancyCard.vue
+            | - PricingCardStyle1.vue
+        | - Partials
+            | - Footer
+            | - FooterComponents
+            | - Header
+        | - Sections
+            | - SectionStyle1.vue
+    | - BreadCrumb.vue
+    | - Loader.vue
+    | - ScrollTop.vue</pre>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+            <section id="basic-css">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">CSS Structure</h2>
+                        <p>Here is the <strong>general CSS structure of the template:</strong></p>
+                        <p>We import css files in app.css</b></p>
+                        <pre class="prettyprint lang-html linenums">
+&lt;!-- assets folder --&gt;
+| - xamin-vue
+    | - assets
+      | - app
+          | - app.css
+
+                        </pre>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section id="basic-favicon">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Favicon icon</h2>
+                        <p>Favicon is an icon associated with the URL that is displayed at various places, such as in a browser’s address bar or next to the site name in a bookmark list.</p>
+                        <p>You can add a Favicon to your Website using the following code:</p>
+                        <pre class="prettyprint lang-html linenums">
+
+| - xamin-vue
+    | - static
+          - favicon.ico
+
+    | - nuxt.config.js // file content
+            link: [
+              { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            ]
+                        </pre>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-loading">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Page Loading Transitions</h2>
+                        <p>Page Loading Transitions are enabled by default. If you wish to disable the page loading transition you can simply delete below section</p>
+                        <pre class="prettyprint lang-html linenums">
+
+| - components
+    | - themes
+        | - Loader.vue
+
+            &lt;template&gt;
+                &lt;div id="loading"&gt;
+                    &lt;div class="loading-center"&gt;
+                        &lt;img :src="require('../../assets/images/loader.gif')" alt="loader" /&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/template&gt;
+            &lt;script&gt;
+                export default {
+                    name: 'Loader'
+                }
+            &lt;/script&gt;
+      
+                        </pre>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-logo">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Logo</h2>
+                        <p>Use the header style which is in <span class="atv">components -> themes -> Partials -> Header</span>. Replace <span class="atv">"logo.png"</span> with your own logo image URL.</p>
+                        <pre class="prettyprint lang-html linenums">
+
+| - xamin-vue
+    | - layouts
+        | - LandingPage1.vue
+
+            &lt;HeaderStyle1 :logo-img="logo" :nav-item-list="navItems" class-name="style-one" :styled-logo="styleLogo"/&gt;
+                &lt;script&gt;
+                    import logoImg from '../assets/images/logo.png'
+                &lt;/script&gt;
+                        </pre>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-fonts">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Changing Fonts</h2>
+                        <p> You can add/change the site font, from all fonts used from <a href="https://www.google.com/fonts"> Google Web Font Services,</a> with the one that suits you the best. You can find the font link in <span class="atv">app.css</span> file. See example below:</p>
+                        <pre class="prettyprint lang-html linenums">
+
+| - xamin-vue
+    | - assets
+        | - app
+            | - app.css  // file content
+        &lt;!-- Google fonts --&gt;
+        @import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:300,400,500,600,700,800,900";
+        
+                        </pre>
+                        <br>
+                        <p>To include new font you can simply add another link like this: </p>
+                        <pre class="prettyprint lang-html linenums">
+
+| - xamin-vue
+    | - assets
+        | - app
+            | - app.css  // file content
+
+        &lt;!-- Karla font --&gt;
+        @import url('https://fonts.googleapis.com/css?family=Karla%3A400%2C700&#038;display=swap&#038;ver=1.0');
+
+        &lt;!-- Libre Franklin font --&gt;
+        @import url('https://fonts.googleapis.com/css?family=Libre+Franklin%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C800%2C800i&#038;subset=latin%2Clatin-ext');
+        
+        &lt;!-- Lato font --&gt;
+        @import url('https://fonts.googleapis.com/css?family=Lato%3A400%2C700%2C900&#038;display=swap&#038;ver=1.0');
+                        </pre>
+                        <br>
+                        <p>In order to change the fonts, you will need to edit the above links with your custom font, You can easily use <a href="https://www.google.com/fonts"> Google Web Font Services</a> if you plan to use a Google Font or remove it completely. If you plan to use a self hosted font, here is an Example of using <a href="https://css-tricks.com/snippets/css/using-font-face/">Self Hosted Fonts</a></p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="section-title">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Section Title</h2>
+                        <p>Use this sample code for page section title to keep the consistency in the title. </p>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;div class="title-box wow fadeInUp text-left"&gt;
+    &lt;span class="title-design"&gt;About us&lt;/span&gt;
+    &lt;h2&gt;Human Behaviour, Data Science&lt;/h2&gt;
+    &lt;p&gt;It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layout.&lt;/p&gt;
+&lt;/div&gt;</pre>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-padding">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For section padding</h2>
+                        <p>You can add this helper class to set section <span class="atv">padding top 100px</span> and <span class="atv">padding bottom 100px</span>.
+                           <br> Add <span class="atv">iq-ptb-100</span> class in <span class="atv">section</span> tag. See example below:
+                        </p>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;section class=&quot;... iq-ptb-100&quot;&gt;</p>
+[YOUR CONTENT]<p>&lt;/section&gt;</pre><p> <span class="label label-danger">Note</span> Use this helper class to maintain all page section spacing. You can also use <span class="atv">pt</span> for only padding top and <span class="atv">pb</span> for only padding bottom. </p>                     </div>
+                  </div>
+               </div>
+            </section>
+            
+            <section id="basic-background">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Background color</h2>
+                        <p>You can use color in the background. simply add <span class="atv"> .iq-bg-over</span> (or any color you want) class where you want to use. See example below: </p>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;div class=&quot;iq-bg-over&quot;&gt;
+    [YOUR CONTENT]&lt;/div&gt;</pre>
+                        <p> <span class="label label-danger">Note</span> We include 4 background color helper class in our template <span class="atv">iq-bg-over, iq-over-dark-90, xamin-blue-bg and bg-grey</span> You can add unlimited background color class according to your needs </p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section id="basic-separator">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Separator</h2>
+                        <p>Add this tag in your HTML code to add Separator line. Simply add <span class="atv"> hr </span> tag where you want to add the line. See example below:</p>
+                        <pre class="prettyprint lang-html linenums overflow-auto"><p>...</p>
+                            <p> [SECTION 1 CONTENT]</p>
+                            <p>...</p>
+                            <p>&lt;/section&gt; &lt;!--Section 1 End--&gt;</p>
+                            <p>  &lt;hr/&gt;</p>
+                            <p>&lt;section&gt; &lt;!--Section 2 Start--&gt;</p>
+                            <p>...</p>
+                            <p> [SECTION 2 CONTENT]</p>
+                            <p>...</p></pre>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-components">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Bootstrap Components</h2>
+                        <p>
+                            Bootstrap has wonderfull documentation on the following components::
+                        </p>
+                        <ul>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/utilities/text/#text-alignment" target="black">Text Alignments</a>
+                           </li>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/components/alerts/" target="black">Alerts</a>
+                           </li>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/components/badge/" target="black">Badges</a>
+                           </li>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/components/carousel/" target="black">Carousel</a>
+                           </li>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/layout/grid/">Columns</a>
+                           </li>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/content/tables/">Tables</a>
+                           </li>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/components/buttons/" target="black">Buttons</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-cards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 class="heading-title">Card styles</h2>
+                            <p>We have build different types of stylish card components. And these are the some examples of cards</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Card-style1</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center">
+                                <img src="./images/example-images/card-style1.png" class="img-fluid" alt="card-style1.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle1&gt;
+    &lt;div slot="cardMedia"&gt;
+        &lt;img :src="list.src" alt="fancy-list"&gt;
+    &lt;/div&gt;
+    &lt;div slot="cardTitle"&gt;
+        &lt;h4 class="mb-2"&gt;{{ list.title }}&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div slot="cardBody"&gt;
+        &lt;p&gt;{{ list.description }}&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div slot="cardList" class="text-left"&gt;
+        &lt;ul class="iq-list"&gt;
+            &lt;li&gt; &lt;i class="fas fa-check-square"&gt;&lt;/i&gt;&lt;span&gt;Advance Advisory Team&lt;/span&gt; &lt;/li&gt;
+            &lt;li&gt; &lt;i class="fas fa-check-square"&gt;&lt;/i&gt;&lt;span&gt;Professional Consulting Services&lt;/span&gt; &lt;/li&gt;
+            &lt;li&gt; &lt;i class="fas fa-check-square"&gt;&lt;/i&gt;&lt;span&gt;Advance Advisory Team&lt;/span&gt; &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/CardStyle1&gt;
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Card-style2</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center">
+                                <img src="./images/example-images/card-style2.png" class="img-fluid" alt="card-style2.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle2 :card-content="list" card-class="owl-carousel owl-loaded owl-drag" /&gt;
+
+&lt;div :class="cardClass" data-dots="false" data-nav="false" data-items="4" data-items-laptop="4" data-items-tab="3" data-items-mobile="1" data-items-mobile-sm="1" data-autoplay="true" data-loop="true" data-margin="30"&gt;
+    &lt;div class="item text-left" v-for="(item, index) in cardContent" :key="index" &gt;
+        &lt;div class="iq-team"&gt;
+            &lt;div class="iq-team-img"&gt; &lt;img :src="item.media" class="img-fluid" alt="#1"&gt; &lt;/div&gt;
+            &lt;div class="iq-share"&gt;
+                &lt;div class="slideouticons"&gt;
+                    &lt;label class="mainlabel"&gt;&lt;i class="fa fa-share-alt"&gt;&lt;/i&gt;&lt;/label&gt;
+                    &lt;div class="iconswrapper"&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="iq-team-info text-center"&gt;
+                &lt;a&gt;
+                  &lt;h5&gt;{{ item.title }}&lt;/h5&gt;
+                &lt;/a&gt;
+                &lt;span&gt;{{ item.subtitle }}&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Card-style3</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center pl-4">
+                                <img src="./images/example-images/card-style3.png" class="img-fluid" alt="card-style3.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle3 :card-content="list" card-class="owl-carousel owl-loaded owl-drag"/&gt;
+
+&lt;div :class="cardClass" data-dots="true" data-nav="false" data-autoplay="true" data-loop="true" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="30"&gt;
+    &lt;div v-for="(item,index) in cardContent" :key="index" class="item"&gt;
+        &lt;div class="testimonial-info"&gt;
+            &lt;div slot="cardBody"&gt;
+                &lt;p&gt;{{ item.description }}&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="post-img"&gt;
+                &lt;div slot="cardMedia"&gt;
+                    &lt;img :src="item.src" class="img-fluid rounded-circle" alt="#" width="150" height="150"&gt;
+                &lt;/div&gt;
+                &lt;div slot="cardHeader" class="testimonial-name"&gt;
+                    &lt;h5&gt;{{ item.title }}&lt;/h5&gt;
+                    &lt;span class="sub-title"&gt;{{ item.subtitle }}&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt; 
+&lt;/div&gt; 
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Card-style4</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center">
+                                <img src="./images/example-images/card-style4.png" class="img-fluid" alt="card-style4.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle4 :card-image="images" card-class="owl-carousel"/&gt;
+
+&lt;div :class="cardClass" data-dots="true" data-nav="false" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-autoplay="true" data-loop="true" data-margin="30"&gt;
+    &lt;div v-for="(item,index) in cardImage" :key="index" class="consulting-img text-left"&gt;
+        &lt;div slot="cardMedia"&gt;
+            &lt;img :src="item.src" alt="slider"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt; 
+                            </pre>
+                        </div>
+                    </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 >Card-style5</h4>
+                    </div>
+                    <div class="col-sm-4 d-flex ">
+                        <div class="justify-content-center align-self-center">
+                            <img src="./images/example-images/card-style5.png" class="img-fluid" alt="card-style5.png">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 ">
+                        <h6>Source code</h6>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle5 :card-menu="menu_item" /&gt;
+
+&lt;div class="nav flex-column nav-pills mb-5 widget widget_nav_menu"&gt;
+    &lt;nuxt-link v-for="(item,index) in cardMenu" :to="item.href" :key="index" :class="item.class"&gt;
+        {{ item.title }}
+    &lt;/nuxt-link&gt;
+&lt;/div&gt; 
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 >Card-style6</h4>
+                    </div>
+                    <div class="col-sm-4 d-flex ">
+                        <div class="justify-content-center align-self-center">
+                            <img src="./images/example-images/card-style6.png" class="img-fluid" alt="card-style6.png">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 ">
+                        <h6>Source code</h6>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle6 :client-list="list" /&gt;
+
+&lt;div class="row fancy-clients wow fadeIn"&gt;
+    &lt;div v-for="(item,index) in clientList" :key="index" class="col-lg-2 col-md-3 col-sm-6"&gt;
+        &lt;a class="clients-block wow fadeIn" data-wow-delay="0.6s" href="#"&gt;
+            &lt;img class="img-fluid" :src="item.src" alt="image"&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 >Card-style7</h4>
+                    </div>
+                    <div class="col-sm-4 d-flex ">
+                        <div class="justify-content-center align-self-center">
+                            <img src="./images/example-images/card-style7.png" class="img-fluid" alt="card-style7.png">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 ">
+                        <h6>Source code</h6>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle7 v-for="(item, index) in ItemList" :card-class="item.styleClass" :card-title="item.title" :card-subtitle="item.subTitle" :card-media ="item.image" :key="index"/&gt;
+
+&lt;div :class="CardClass"&gt;
+    &lt;div class="iq-portfolio"&gt;
+        &lt;a href="#" class="iq-portfolio-img"&gt;&lt;img width="1260" height="954" :src="CardMedia" class="img-fluid" alt="" &gt;&lt;/a&gt;
+        &lt;div class="iq-portfolio-content  text-center"&gt;
+            &lt;div class="details-box clearfix"&gt;
+            &lt;div class="consult-details"&gt;
+                &lt;a href="#"&gt;
+                    &lt;h5 class="text-hover"&gt; {{ CardTitle }} &lt;/h5&gt;
+                &lt;/a&gt;
+                &lt;p class="mb-0"&gt;{{ CardSubtitle }}&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 >Fancy-card</h4>
+                    </div>
+                    <div class="col-sm-4 d-flex ">
+                        <div class="justify-content-center align-self-center p-4">
+                            <img src="./images/example-images/fancy-card.png" class="img-fluid" alt="fancy-card.png">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 ">
+                        <h6>Source code</h6>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+
+&lt;FancyCard card-class="row" :card-content="lists2" /&gt;
+
+&lt;div :class="cardClass"&gt;
+    &lt;div v-for="(item,index) in cardContent" :key="index" class="col-lg col-md-6"&gt;
+        &lt;div class="fancybox-userbehavior wow fadeInUp text-left"&gt;
+            &lt;h6 class="mb-2"&gt;{{ item.title }}&lt;/h6&gt;
+            &lt;div class="analytics-icon"&gt; &lt;i aria-hidden="true" :class="item.class"&gt;&lt;/i&gt; &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 >Fancy-card1</h4>
+                    </div>
+                    <div class="col-sm-4 d-flex ">
+                        <div class="justify-content-center align-self-center p-4">
+                            <img src="./images/example-images/fancy-card1.png" class="img-fluid" alt="fancy-card1.png">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 ">
+                        <h6>Source code</h6>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+    
+&lt;FancyCard1 card-class="row" :card-content="list" /&gt;
+    
+&lt;div :class="cardClass"&gt;
+    &lt;div v-for="(item,index) in cardContent" :key="index" class="col-lg-4 col-md-4 col-sm-6 wow fadeInUp align-items-center"&gt;
+        &lt;div class="fancy_service wow fadeInUp  text-center" &gt;
+            &lt;div class="hover-effect"&gt;&lt;/div&gt;
+            &lt;div class="fancy-info"&gt;
+                &lt;img :src="item.src" alt="fancybox"&gt;
+                &lt;h4 class="mt-4 mb-3 title"&gt;{{ item.title }}&lt;/h4&gt;
+                &lt;p class=""&gt;{{ item.subtitle }}&lt;/p&gt;
+                &lt;a class="link-btn" href="#"&gt;&lt;span class="btn-effect"&gt; Read More&lt;i class="ion-ios-arrow-right"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 >Fancy-card2</h4>
+                    </div>
+                    <div class="col-sm-4 d-flex ">
+                        <div class="justify-content-center align-self-center p-4">
+                            <img src="./images/example-images/fancy-card2.png" class="img-fluid" alt="fancy-card2.png">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 ">
+                        <h6>Source code</h6>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+        
+&lt;FancyCard2 card-class="row" :card-content="list" /&gt;
+        
+&lt;div :class="cardClass"&gt;
+    &lt;div v-for="(item,index) in cardContent" :key="index"  class="col-md-3 col-sm-6"&gt;
+        &lt;div class="iq-timer style2 mb-5 mb-md-0 mb-lg-0 text-center"&gt;
+            &lt;div class="iq-img"&gt; &lt;img :src="item.src" alt="fancybox"&gt; &lt;/div&gt;
+            &lt;div class="timer-details "&gt;
+                &lt;span class="timer dark-timer"&gt;
+                    &lt;count-to :start-val="0" :end-val="item.number" :duration="15000" /&gt;
+                &lt;/span&gt;
+                &lt;span class="timer_postfix dark-timer"&gt;M+&lt;/span&gt;&lt;i class="fa fa-percent" aria-hidden="true"&gt;&lt;/i&gt;
+                &lt;p class="dark-timer"&gt;{{ item.title }}&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 >Fancy-card3</h4>
+                    </div>
+                    <div class="col-sm-4 d-flex ">
+                        <div class="justify-content-center align-self-center p-4">
+                            <img src="./images/example-images/fancy-card3.png" class="img-fluid" alt="fancy-card3.png">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 ">
+                        <h6>Source code</h6>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+            
+&lt;FancyCard3 card-class="col-md-6" :card-content="list1" /&gt;
+
+&lt;div :class="cardClass"&gt;
+    &lt;div v-for="(item,index) in cardContent" :key="index" class="xamin-analytics wow fadeInUp text-left" &gt;
+        &lt;div class="analytics-icon"&gt;
+            &lt;img :src="item.src" alt="fancybox"&gt;
+        &lt;/div&gt;
+        &lt;div class="analytics-detail"&gt;
+            &lt;h4 class="mb-1"&gt;{{ item.title }}&lt;/h4&gt;
+            &lt;p class="mb-0"&gt;{{ item.subtitle }}&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 >Pricing-card-style1</h4>
+                    </div>
+                    <div class="col-sm-4 d-flex ">
+                        <div class="justify-content-center align-self-center p-4">
+                            <img src="./images/example-images/pricing-card.png" class="img-fluid" alt="pricing-card.png">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 ">
+                        <h6>Source code</h6>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+data (){
+  return{
+    lists: [
+    {
+      price: '0',
+      title: 'Free',
+      subtitle: 'Feedback System',
+      description: 'It is a long established fact that a reader will be distracted',
+      buttontext: 'Sign up Free',
+      features: [
+        {
+          class: '',
+          title: 'Social Integration'
+        },
+        {
+          class: '',
+          title: 'Push Notifications'
+        },
+        {
+          class: '',
+          title: 'Relevant App Content'
+        },
+        {
+          class: '',
+          title: 'Log-in via Social Media'
+        }
+      ]
+    }
+  }
+}
+&lt;div :class="cardClass"&gt;
+    &lt;div  v-for="(item,index) in cardContent" :key="index"  class="col-lg-4 col-md-6 text-center"&gt;
+        &lt;div class="iq-pricing"&gt;
+            &lt;div class="priceing-title "&gt;
+                &lt;h2&gt;{{ item.price }}$&lt;span&gt;/month&lt;/span&gt;&lt;/h2&gt;
+                &lt;p class="mb-0"&gt;{{ item.description }}&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="priceing-description "&gt;
+                &lt;h4 class="title mb-3"&gt;{{ item.title }}&lt;/h4&gt;
+                &lt;h5 class="subtitle mb-3"&gt;{{ item.subtitle }}&lt;/h5&gt;
+                &lt;ul class="pricing-list"&gt;
+                    &lt;li v-for="(list,rindex) in item.features" :key="rindex"&gt;{{ list.title }}&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;a class="button blue-btn" href="#" role="button"&gt;{{ item.buttontext }}&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                        </pre>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+             <section id="basic-header">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <h2 class="heading-title">Header style</h2>
+                             <p>We have build different types of stylish header components. And these are the some examples of header</p>
+                         </div>
+                     </div>
+
+                     <div class="row">
+                         <div class="col-sm-12 ">
+                             <h6>Source code</h6>
+                             <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;!--Import Sub menu  --&gt;
+import { menu, services, pages, landing1About, ourCases , blog } from '../config/constant.js'
+&lt;!--Import logo image --&gt;
+import logoImg from 'assets/images/logo.png';
+&lt;!--Declare variable --&gt;
+data () {
+  return {
+    styleLogo: false,
+    logo: logoImg,
+    navItems: [
+      { href: '/landing-page-1',
+        title: 'Home',
+        active: true,
+        children: true,
+        child: menu 
+      },
+      { href: '#', title: 'About Us', children: true, child: landing1About },
+      { href: '/services', title: 'Services', children: true, child: services },  
+      { href: '#', title: 'Our Cases', children: true , child: ourCases },
+      { href: '/blog', title: 'Blog', children: true , child: blog },
+      { href: '/#', title: 'Pages', children: true, child: pages }
+    ]
+}                           </pre>
+                         </div>
+                         <div class="col-sm-12">
+                             <h4>Header-style1</h4>
+                         </div>
+                         <div class="col-sm-12">
+                             <div class="justify-content-center align-self-center p-4">
+                                 <img src="./images/example-images/header-style1.png" class="img-fluid" alt="header-style1.png">
+                             </div>
+                         </div>
+                         <div class="col-sm-12 ">
+                             <h6>Source code</h6>
+                             <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;HeaderStyle1 :logo-img="logo" :nav-item-list="navItems" class-name="style-one" :styled-logo="styleLogo"/&gt;
+
+                            </pre>
+                         </div>
+
+                        <div class="col-sm-12">
+                            <h4>Header-style2</h4>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="justify-content-center align-self-center p-4">
+                                <img src="./images/example-images/header-style2.png" class="img-fluid" alt="header-style2.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;HeaderStyle1 :logo-img="logo" :nav-item-list="navItems" class-name="style-one style-two" :styled-logo="styleLogo"/&gt;
+
+                           </pre>
+                        </div>
+                        </div>
+                 </div>
+             </section>
+
+             <section id="basic-footer">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <h2 class="heading-title">Footer style</h2>
+                             <p>We have build different types of stylish footer components. And these are the some examples of footer</p>
+                         </div>
+                     </div>
+
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <h4>Footer-style1</h4>
+                         </div>
+                         <div class="col-sm-12">
+                             <div class="justify-content-center align-self-center p-4">
+                                 <img src="./images/example-images/footer-style1.png" class="img-fluid" alt="footer-style1.png">
+                             </div>
+                         </div>
+                         <div class="col-sm-6 ">
+                             <h6>Source code</h6>
+                             <pre class="prettyprint lang-html linenums overflow-auto" style="max-height: 500px;overflow-y: scroll">
+&lt;!--Declare variable in typescript file --&gt;
+data () {
+  return {
+    navLogo: logoImg,
+    footerText: [
+      {
+        icon: true,
+        iconClass: 'fas fa-phone-alt',
+        text: '+0123 456 789'
+      },
+      {
+        icon: true,
+        iconClass: 'fas fa-envelope',
+        text: 'support@iqnonicthemes.com'
+      },
+      {
+        icon: true,
+        iconClass: 'fas fa-home',
+        text: '1234 North Luke Lane, South Bend, IN 360001'
+      }
+    ],
+    footerHome: [
+      {
+        href: 'javascript:void(0)',
+        title: 'Home'
+      },
+      {
+        href: 'javascript:void(0)',
+        title: 'Blog'
+      },
+      {
+        href: 'javascript:void(0)',
+        title: 'Careers'
+      },
+      {
+        href: 'javascript:void(0)',
+        title: 'Clients'
+      },
+      {
+        href: 'javascript:void(0)',
+        title: 'Service'
+      } 
+    ]
+  }
+}</pre>
+                         </div>
+                         <div class="col-sm-6 ">
+                             <h6>Source code</h6>
+                             <pre class="prettyprint lang-html linenums overflow-auto" style="max-height: 500px;overflow-y: scroll">
+
+&lt;FooterMain class="footer-one iq-bg-dark iq-over-dark-90"&gt;
+    &lt;div slot="footerContent" class="footer-top"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-4 col-md-6 col-sm-6"&gt;
+                &lt;FooterLogo
+                :section-image="navLogo"
+                section-text="It is a long established fact that a reader will be distracted by the readable content."
+                /&gt;
+            &lt;/div&gt;
+            &lt;div class="col-lg-2 col-md-6 col-sm-6 mt-4 mt-lg-0 mt-md-0"&gt;
+                &lt;FooterLinks :content="footerHome" title="Menu"/&gt;
+            &lt;/div&gt;
+            &lt;div class="col-lg-2 col-md-6 col-sm-6 mt-4 mt-lg-0 mt-md-0"&gt;
+                &lt;FooterLinks :content="footerHome" title="About Us"/&gt;
+            &lt;/div&gt;
+            &lt;div class="col-lg-4 col-md-6 col-sm-6 mt-lg-0 mt-4"&gt;
+                &lt;FooterAddress :address-content="footerText" address-title="Contact us" class="iq-contact" /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;    
+    &lt;/div&gt;
+&lt;/FooterMain&gt;
+                             </pre>
+                         </div>
+                     </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4>Footer-style2</h4>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="justify-content-center align-self-center p-4">
+                                <img src="./images/example-images/footer-style2.png" class="img-fluid" alt="footer-style2.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto" style="max-height: 500px;overflow-y: scroll">
+&lt;!--Declare variable in typescript file --&gt;
+data () {
+ return {
+   navLogo: logoImg,
+   footerText: [
+     {
+       icon: true,
+       iconClass: 'fas fa-phone-alt',
+       text: '+0123 456 789'
+     },
+     {
+       icon: true,
+       iconClass: 'fas fa-envelope',
+       text: 'support@iqnonicthemes.com'
+     },
+     {
+       icon: true,
+       iconClass: 'fas fa-home',
+       text: '1234 North Luke Lane, South Bend, IN 360001'
+     }
+   ],
+   footerHome: [
+     {
+       href: 'javascript:void(0)',
+       title: 'Home'
+     },
+     {
+       href: 'javascript:void(0)',
+       title: 'Blog'
+     },
+     {
+       href: 'javascript:void(0)',
+       title: 'Careers'
+     },
+     {
+       href: 'javascript:void(0)',
+       title: 'Clients'
+     },
+     {
+       href: 'javascript:void(0)',
+       title: 'Service'
+     } 
+   ]
+ }
+}</pre>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto" style="max-height: 500px;overflow-y: scroll">
+
+&lt;FooterMain :class="footerClass"&gt;
+    &lt;div slot="footerContent" class="footer-top"&gt;
+        &lt;div class="row algin-self-center footer_top_block"&gt;
+            &lt;div class="col-md-6"&gt;
+                &lt;h4 class="footer-title"&gt;Subscribe for Newsletter&lt;/h4&gt;			
+            &lt;/div&gt;
+            &lt;div class="col-md-6"&gt;
+                &lt;div class="mc4wp-form-fields"&gt;
+                    &lt;input type="email" name="EMAIL" placeholder="Your Email" required=""&gt;
+                    &lt;input type="submit" value="Sign up"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-4 col-md-6 col-sm-6"&gt;
+                &lt;FooterLogo
+                    :section-image="navLogo"
+                    section-text="It is a long established fact that a reader will be distracted by the readable content."
+                /&gt;
+            &lt;/div&gt;
+            &lt;div class="col-lg-2 col-md-6 col-sm-6 mt-4 mt-lg-0 mt-md-0"&gt;
+                &lt;FooterLinks :content="footerHome" title="Menu"/&gt;
+            &lt;/div&gt;
+            &lt;div class="col-lg-2 col-md-6 col-sm-6 mt-4 mt-lg-0 mt-md-0"&gt;
+                &lt;FooterLinks :content="footerHome" title="About Us"/&gt;
+            &lt;/div&gt;
+            &lt;div class="col-lg-4 col-md-6 col-sm-6 mt-lg-0 mt-4"&gt;
+                &lt;FooterAddress :address-content="footerText" address-title="Contact us" class="iq-contact" /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;    
+    &lt;/div&gt;
+&lt;/FooterMain&gt;
+                            </pre>
+                        </div>
+                    </div>
+                 </div>
+             </section>
+
+            <section id="basic-support">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Browser Support</h2>
+                        <p>Supports all major Browsers like Google Chrome, Mozilla Firefox, Safari, Opera, Internet Explorer 9 and above.</p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-log">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Change Log</h2>
+                        <h4>Version 1.0</h4>
+                        <p>- Initial Release</p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-source">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Source & Credits</h2>
+                        <p>All images and videos are for preview purposes only and are not included in the download files. Images are of copyrights under Creative Commons CC0.</p>
+                        <br>
+                        <h4>Images</h4>
+                        <ul>
+                           <li>bigstockphoto <a href="https://www.bigstockphoto.com/">bigstockphoto</a></li>
+                           <li>Pexels <a href="https://www.pexels.com/">Pexels</a></li>
+                           <li>freepik <a href="http://www.freepik.com/">freepik</a></li>
+                           <li>pixabay <a href="https://pixabay.com/">pixabay</a></li>
+                        </ul>
+                        <br>
+                        <br>
+                        <h4>Scripts</h4>
+                        <ul>
+                           <li><a href="https://vuejs.org">Vue JS</a></li>
+                           <li><a href="https://jquery.com/">Jquery</a></li>
+                           <li><a href="http://www.owlcarousel.owlgraphic.com/">Owl Carousel 2</a></li>
+                           <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a></li>
+                           <li><a href="https://github.com/bas2k/jquery.appear/">Jquery appear</a></li>
+                           <li><a href="https://github.com/mhuggins/jquery-countTo">Counter</a></li>
+                           <li><a href="https://github.com/glix/jQuery-Plugins/tree/master/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown">Countdown</a></li>
+                        </ul>
+                        <br>
+                        <br>
+                        <h4>CSS & Fonts</h4>
+                        <ul>
+                           <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+                           <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+                           <li><a href="http://ionicons.com/#cdn">ionicons</a></li>
+                           <li><a href="https://www.google.com/fonts">Google Fonts</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="rate-item">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">How to rate this Template</h2>
+                        <p>Please do rate us if you like our theme and support. We look forward to your valuable review. For rating visit: <a href="http://themeforest.net/downloads">http://themeforest.net/downloads</a> and find "Rate this item" below the download button and rate out the theme. Advance Thanks in Prospect!<br>
+                        </p>
+                        <div class="rate-img"> <img src="images/rate.jpg" alt="logo"> </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <footer class="footer">
+            <div class="container">
+            <div class="row">
+            <div class="col-sm-12">
+            <p>Designed and built with love by <a href="http://iqonic.design">Iqonic Design</a></p>
+            </div>
+            </div>
+            </div>
+            </footer>
+            </div>
+         </div>
+         <!-- end main -->
+      </div>
+      <!-- end wrapper -->
+      <!-- END SITE -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/prettify.js"></script>
+      <script src="js/plugins.js"></script>
+   </body>
+</html>
